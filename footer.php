@@ -42,32 +42,10 @@
 
 		<section class="rodapePrincipal-patrocinadores">
 			<div class="container">
-				<ul class="rodapePrincipal-patrocinadores-list">
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-alura" href="#">
-							<img src="img/logos/alura.svg" alt="Logo da Alura">
-						</a>
-					</li>
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-caelum" href="#">
-							<img src="img/logos/caelum.svg" alt="Logo da Caelum">
-						</a>
-					</li>
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-casaDoCodigo" href="#">
-							<img src="img/logos/cdc.svg" alt="Logo da Casa do Código">
-						</a>
-					</li>
-				</ul>
-				<form class="rodapePrincipal-contatoForm" action="#">
-					<fieldset>
-						<legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre em contato conosco</legend>
-						<div class="rodapePrincipal-contatoForm-fieldset"> 
-							<input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato" id="email-contato">
-							<button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
-						</div>
-					</fieldset>
-				</form>
+			
+				<div class="wrap">
+					<p>Copyright &copy; 2021  All rights Reserved by @verasdan</a></p>
+				</div>
 			</div>
 		</section>
 	</footer>
