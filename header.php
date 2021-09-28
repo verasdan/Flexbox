@@ -10,14 +10,14 @@
     <header class="topo">
         <div class="container">
             <h1 class="topo-titulo">
-                <a href="#">Dan</a>
+                <a href="index.php">Dan</a>
             </h1>
 
-            <nav class="cabecalhoPrincipal-nav">
-                <a class="cabecalhoPrincipal-nav-link" href="?p=home">Home</a>
-                <a class="cabecalhoPrincipal-nav-link" href="?p=cursos">Cursos</a>
-                <a class="cabecalhoPrincipal-nav-link" href="?p=sobre">Sobre nós</a>
-                <a class="cabecalhoPrincipal-nav-link" href="?p=contato">Contato</a>
+            <nav class="menu-nav">
+                <a class="menu-nav-link" href="?p=home">Home</a>
+                <a class="menu-nav-link" href="?p=cursos">Cursos</a>
+                <a class="menu-nav-link" href="?p=sobre">Sobre nós</a>
+                <a class="menu-nav-link" href="?p=contato">Contato</a>
             </nav>
         </div>
 

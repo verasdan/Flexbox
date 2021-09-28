@@ -28,8 +28,7 @@
 
 /* Formatação do Body */
 body {
-	background-color: #F2F5F7;
-	font-family: 'Open Sans',Arial,sans-serif;
+	background-color: #ffffff;
 }
 
 .container {
@@ -37,6 +36,8 @@ body {
 	margin: 0 auto;
 }
 
+
+/* HEADER */
 .topo {
 	background-color: #FFF;
 	padding: 20px 0;
@@ -46,4 +47,369 @@ body {
 	font-weight: bold;
 	font-size: 2em;
 	margin-bottom: 20px;
+}
+
+.topo-titulo a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #9799A6;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+
+	border-bottom: 1px solid #9799A6;
+}
+
+/* Configuração page cursos */
+.conteudoPrincipal {
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.conteudoPrincipal-cursos-link {
+	height: 100px;
+	background-color: #FFF;
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+}
+
+.conteudoPrincipal-cursos-link a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.conteudoPrincipal-cursos-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.conteudoPrincipal-cursos-link a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(even) a:before {
+	background: url(../img/background1.svg) no-repeat;	
+}
+
+.conteudoPrincipal-cursos-link:nth-child(odd) a:before {
+	background: url(../img/background2.svg) no-repeat;
+}
+
+
+
+/* Footer */
+footer{
+margin:0px;
+}
+.footer {
+	background-color: #324C64;
+	
+}
+
+.footer .subtitulo {
+	color: #FFF;
+}
+
+.footer-navMap-link {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.footer-navMap-link {
+	font-size: .9em;
+}
+
+.navmap-list-title {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin: .9em 0;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+.navmap-list-title + .footer-navMap-link {
+	margin-top: 0;
+}
+
+.navmap-list-title-BD { color: #EC6E5A; border-left: 4px solid #EC6E5A; }
+.navmap-list-title-framework { color: #AD85BF; border-left: 4px solid #AD85BF; }
+.navmap-list-title-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.navmap-list-title-backend { color: #25D285; border-left: 4px solid #25D285; }
+
+.videoSobre {
+	background-color: #5E9EDC;
+	padding: 35px 0px;
+	height: 350px;
+}
+
+.videoSobre-video {
+	max-width: 100%;
+}
+
+.videoSobre .container {
+	color: #FFF;
+}
+
+.videoSobre-sobre-title {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.videoSobre-sobre {
+	font-size: 1.3em;
+	line-height: 2;
+}
+
+.videoSobre-button {
+	border-radius: 8px;
+	background-color: #ec6e5a;
+	display: block;
+	color: #FFF;
+	border: none;
+	height: 50px;
+	font-size: .8em;
+	outline: none;
+}
+
+
+/* Configuração Flexbox */
+.topo .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-nav {
+	display: flex;
+}
+
+.conteudoPrincipal-cursos {
+	display: flex;
+	flex-wrap: wrap;
+}
+.conteudoPrincipal-cursos-link {
+	width: 23%;
+	margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+	margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+.videoSobre .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.videoSobre-sobre {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 10;
+}
+
+.videoSobre-sobre-list {
+	flex-grow: 1;
+}
+
+.videoSobre-video {
+	flex-grow: 1;
+}
+.footer-navMap-list {
+	display: flex;
+	/*flex-direction: column;
+	flex-wrap: wrap;*/
+	flex-flow: column wrap;
+	height: 250px;
+}
+.footer-copy{
+	height: 50px ;
+	background-color: #FFF;
+	text-align: center;
+	padding-top: 29px;
+}
+
+/*parte mobile*/
+@media(max-width: 768px) {
+	.cabecalhoPrincipal-nav {
+		flex-direction: column;
+	}
+
+	.cabecalhoPrincipal .container {
+		flex-direction: column;
+		align-items: initial;
+		text-align: center;
+	}
+
+	.conteudoPrincipal-cursos {
+		flex-direction: column;
+	}
+
+	.conteudoPrincipal-cursos-link {
+		width: 100%;
+	}
+
+	.rodapePrincipal-navMap-list {
+		height: auto;
+	}
+
+	.rodapePrincipal-patrocinadores .container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rodapePrincipal-patrocinadores-list {
+		margin: 0;
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm {
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset {
+		justify-content: center;
+	}
+
+	.cabecalhoPrincipal-nav-link-app {
+		order: -1;
+	}
+
+	.videoSobre .container {
+		flex-direction: column;
+	}
+
+	.videoSobre-video {
+		margin: 0 auto;
+	}
+}
+
+@media(min-width: 769px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.cabecalhoPrincipal-nav-link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	}
+
+	.cabecalhoPrincipal-titulo {
+		margin: 0;
+	}
+
+	.cabecalhoPrincipal-nav {
+		width: auto;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+	.rodapePrincipal-contatoForm {
+		margin-top: 0;
+		text-align: left;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
